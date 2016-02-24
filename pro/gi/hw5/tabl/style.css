@@ -1,0 +1,50 @@
+table{
+	border: solid 4px #000;
+	border-collapse: collapse;
+	margin: 50px auto;
+}
+
+th{
+	border: solid 4px #000;
+	width: 40px;
+	height: 40px;
+}
+
+th:hover{
+	opacity: 0.5;
+}
+
+.two{
+	width: 80px;
+	height: 80px;
+}
+
+.col-two{
+	width: 80px;
+	height: 40px;
+}
+
+.four{
+	width: 160px;
+	height: 160px;
+}
+
+.white{
+	background: white;
+}
+
+.yellow{
+	background: yellow;
+}
+
+.red{
+	background: red;
+}
+
+.black{
+	background: grey;
+}
+
+.blue{
+	background: blue;
+}
