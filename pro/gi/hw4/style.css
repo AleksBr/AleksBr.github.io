@@ -49,10 +49,12 @@ header{
 			color: #128aa7;
 			margin-bottom: 35px;
 			text-align: left;
-			padding-left: 235px;
+			// padding-left: 235px;
 			font-size: 14px;
 			font-style: normal;
+			float: right;
 		}
+
 
 	.header-countries li{
 		display: inline-block;
@@ -155,7 +157,7 @@ nav ul li{
 
 .dropdown:after{
 	position: absolute;
-	content: "";
+	content: " ";
 	width: 0;
 	height: 0;
 	border-left: 2px solid transparent;
