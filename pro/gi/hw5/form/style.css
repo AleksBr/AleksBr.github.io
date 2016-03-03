@@ -16,6 +16,10 @@
 	font-family: 'helvetica_neueregular';
 }
 
+body{
+	height: 100%;
+}
+
 /*************************************************************************************************
 
 header nav
@@ -79,7 +83,7 @@ section{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 1000px;
+	height: 100%;
 }
 
 /**************************************************************************************************
