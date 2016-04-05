@@ -542,7 +542,8 @@ header{
 	color: #1a2631;
 	font-size: 14px; 
 	font-weight: 400;
-	transform: scaleX(1.0013);	
+	-webkit-transform: scaleX(1.0013);
+	        transform: scaleX(1.0013);	
 	text-transform: lowercase;
 }
 
@@ -583,7 +584,8 @@ header{
 	font-size: 14px; 
 	font-weight: 400;
 	text-align: left;
-	transform: scaleX(1.0013); 
+	-webkit-transform: scaleX(1.0013);
+	        transform: scaleX(1.0013); 
 }
 
 .progress__value-95{
@@ -627,7 +629,8 @@ header{
 	font-size: 14px; 
 	font-weight: 400;
 	text-align: left;
-	transform: scaleX(1.0013); 
+	-webkit-transform: scaleX(1.0013);
+	        transform: scaleX(1.0013); 
 }
 
 /***		show 	***/
@@ -665,7 +668,8 @@ header{
 	color: #1a2631;
 	font-size: 14px; 
 	font-weight: 400;
-	transform: scaleX(1.0013); 
+	-webkit-transform: scaleX(1.0013);
+	        transform: scaleX(1.0013); 
 }
 
 .show__content{
@@ -768,7 +772,8 @@ header{
 	font-size: 14px;
 	font-weight: 400;
 	text-align: left;
-	transform: scaleX(1.0013);
+	-webkit-transform: scaleX(1.0013);
+	        transform: scaleX(1.0013);
 	margin-bottom: 7px;
 	letter-spacing: 1.7px;
 }
@@ -861,7 +866,8 @@ header{
 	letter-spacing: 2.94px;
 	line-height: 35.002px;
 	text-align: center;
-	transform: scaleX(1.0013); 
+	-webkit-transform: scaleX(1.0013);
+	        transform: scaleX(1.0013); 
 	display: inline-block;
 	vertical-align: middle;
 	width: 65%;

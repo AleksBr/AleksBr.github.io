@@ -118,6 +118,7 @@ a.menu__link--active{
 
 .slider__item{
 	outline: none;
+	position: relative;
 }
 
 .slider__content{
@@ -151,8 +152,8 @@ a.menu__link--active{
 
 .dotted__list{
 	position: absolute;
-	bottom: -80%;
-	right: -51%;
+	bottom: -133%;
+	right: 16%;
 }
 
 .dotted__item{
@@ -198,22 +199,37 @@ a.menu__link--active{
 }
 
 .slider__content{
-	float: left;
-	width: 55%;
+	
 }
 
 .slider__img{
 	position: relative;
-	float: left;
-	width: 40%;
-	text-align: center;
 }
 
 .sl-item_img{
-	position: absolute;
-	top: -107px;
-	right: 26px;
+	width: 100%;
+	text-align: center;
+	box-sizing: border-box;
 }
+
+.slider__hover{
+	display: none;
+	position: absolute;	
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	box-sizing: border-box;
+	background-image: url(../img/Shape.png);
+	z-index: 2;
+	top: 0;
+}
+
+.slider__img:hover .slider__hover{
+	display: block;
+}
+
+
 
 /*about block*/
 
@@ -278,8 +294,183 @@ a.menu__link--active{
 	text-shadow: 0 0 5px #f30;
 }
 
+/* 		recent 		*/
+
+.recent__block{
+	background: #f9f9f9;
+	padding-top: 100px;
+	padding-bottom: 90px;
+}
+
+.rec-block__note{
+	background: #fff;
+	padding: 30px 35px 40px 35px;
+	position: relative;
+}
+
+.note-block__text{
+	font-size: 14px;
+}
+
+.note-block__pic{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background-image: url(../img/author.png);
+	position: absolute;
+	top: 8%;
+	left: -5%;
+}
+
+.note-block__angle{
+	display: inline-block;
+	border: solid 10px red;
+	border-left: solid 10px transparent;
+	border-bottom: solid 10px transparent;
+	position: absolute;
+	bottom: -7%;
+	right: 9%;
+}
+
+.note-block__rubric{
+	font-family: 'league_gothicregular';
+	text-transform: uppercase;
+	color: #454545;
+	font-size: 30px;
+	line-height: 24px;
+	text-shadow: 0px 1px 0px #ffffff;
+}
+
+.note-block__rubric--pink{
+	/* font-size: 25px; */
+	color: #edbfff;
+}
 
 
+.update-block__message{
+	margin-bottom: 13px;
+}
+
+.update-block__head{
+	font-family: 'league_gothicregular';
+	color: #454545;
+	font-size: 30px; /* Приближение из-за подстановки шрифтов */
+	font-weight: 400;
+	line-height: 24px; /* Приближение из-за подстановки шрифтов */
+	text-align: left;
+	text-shadow: 0px 1px 0px #ffffff;
+	text-transform: uppercase;
+}
+
+.update-block__pic{
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	background-image: url(../img/autor-mess.png);
+	float: left;
+}
+
+.update-block__rubric{
+	font-family: 'Open Sans', sans-serif;
+	color: #454545;
+	font-size: 16px;/* Приближение из-за подстановки шрифтов */
+	font-weight: 700;
+	line-height: 24px;/* Приближение из-за подстановки шрифтов */
+	text-align: left;
+	text-shadow: 0px 1px 0px #ffffff;
+}
+
+.update-block__text{
+	font-family: 'Open Sans', sans-serif;
+	color: #454545;
+	font-size: 16px;/* Приближение из-за подстановки шрифтов */
+	font-weight: 300;
+	line-height: 24px;/* Приближение из-за подстановки шрифтов */
+	text-align: left;
+	text-shadow: 0px 1px 0px #ffffff;
+}
+
+.update__button{
+	font-family: 'league_gothicregular';
+	color: #454545;
+	font-size: 18px; /* Приближение из-за подстановки шрифтов */
+	font-weight: 400;
+	line-height: 24px; /* Приближение из-за подстановки шрифтов */
+	text-align: left;
+	text-shadow: 0px 1px 0px #ffffff;
+	border: none;
+	background: none;
+	text-transform: uppercase;
+	float: right;
+}
+
+
+/* 		promotio 		*/
+
+.promo__block{
+	background: #f9f9f9;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.promotion__list{
+	text-align: center;
+}
+
+.promotion__ite{
+	display: inline-block;
+	margin-left: 3%;
+	margin-right: 3%;
+}
+
+/*  	news 	  	*/
+
+.news-block__header{
+	font-family: 'league_gothicregular';
+	color: #454545;
+	font-size: 48px; /* Приближение из-за подстановки шрифтов */
+	font-weight: 400;
+	line-height: 33.724px; /* Приближение из-за подстановки шрифтов */
+	text-align: left;
+	text-shadow: 0px 1px 0px #ffffff;
+	text-transform: uppercase;
+}
+
+.news-block__header--gray{
+	color: #b9b9b9;
+	font-size: 48px;
+}
+
+.news-block__copyright{
+	font-family: Georgia;
+	color: #c5c5c5;
+	font-size: 16px;
+	font-style: italic;
+	line-height: 24px;
+	text-align: left;
+	text-shadow: 0px 1px 0px #ffffff;
+}
+
+.news-block__rubric{
+	font-family: 'league_gothicregular';
+	color: #454444;
+	font-size: 30px; /* Приближение из-за подстановки шрифтов */
+	font-weight: 400;
+	line-height: 24px; /* Приближение из-за подстановки шрифтов */
+	text-align: left;
+	text-shadow: 0px 1px 0px #ffffff;
+	text-transform: uppercase;
+}
+
+.news-block__text{
+	font-family: 'Open Sans', sans-serif;
+	color: #787878;
+	font-size: 16px; /* Приближение из-за подстановки шрифтов */
+	font-weight: 300;
+	line-height: 24px; /* Приближение из-за подстановки шрифтов */
+	text-align: left;
+	text-shadow: 0px 1px 0px #ffffff;
+}
 
 
 /*	footer 	*/
