@@ -1,0 +1,516 @@
+/*GOOGLE FONTS*/
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,500,300);
+/* font-family: 'Ubuntu', sans-serif; */
+
+
+/*STYLES*/
+
+*, html, body{
+	margin: 0;
+	padding: 0; 
+	font-size: 0;
+	text-decoration: none;
+}
+
+.container{
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+.container__small{
+	display: inline-block;
+	box-sizing: border-box;
+	width: 48.717%;
+}
+
+.container__margin{
+	margin-right: 2.564%;
+}
+
+/* header */
+
+.header__block{
+	background-image: url(../img/head-nav-background.jpg);
+	background-size: cover;
+	padding-top: 3%;
+	padding-bottom: 4%;
+}
+
+.logo__text{
+	font-size: 50px;
+	margin: 0;
+	color: #303334;
+	line-height: 22px;
+	display: inline-block;
+}
+
+.header__item{
+	display: inline-block;
+}
+
+.header__link{
+	font-size: 18px;
+	line-height: 30px;
+	padding: 12px 21px 12px 19px;
+	color: #303334;
+	text-transform: capitalize;
+}
+
+.header__link:hover{
+	background: #e9df4a;
+	color: #fff;
+}
+
+/*	slide 	*/
+
+.section__slider{
+	color: #fff;
+}
+
+.slider__background{
+	background-image: url(../img/home-01-slider.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	/* padding-top: 5%; */
+	/* padding-bottom: 4%; */
+
+}
+
+.slider__background--two{
+	background-image: url(../img/home-02-slider.jpg);
+}
+
+.slider__background--three{
+	background-image: url(../img/home-03-slider.jpg);
+}
+
+.slider__rubric{
+	font-size: 90px;
+	line-height: 80px;
+	text-transform: uppercase;
+	margin-top: 60%;
+}
+
+.slider__content{
+	font-size: 26px;
+	line-height: 60px;
+	margin-bottom: 45%;
+}
+
+.slick-arrow{
+	position: absolute;
+	width: 69px;
+	height: 69px;
+	z-index: 2;
+	top: 27%;
+	background: none;
+	border: solid 3px #fff;
+	border-radius: 50%;
+	outline: none;
+}
+
+.slick-arrow:hover{
+	opacity: 0.7;
+}
+
+.slick-prev{
+	right: 44%;
+	background-image: url(../img/chevron-left.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.slick-next{
+	right: 38%;
+	background-image: url(../img/chevron-right.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.container__number{
+	vertical-align: bottom;
+}
+
+.wrapper__number{
+	overflow: hidden;
+	margin-bottom: 40px;
+}
+
+.block__number{
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 500;
+	font-size: 340px;
+	line-height: 210px;
+	letter-spacing: -21px;
+	position: relative;
+	bottom: -47px;
+	z-index: 2;
+	color: #fff;
+}
+
+.block__number--black{
+	color: #303334;
+}
+
+.block__number--yellow{
+	color: #e9df4a;
+}
+
+.block__number--right{
+	text-align: right;
+}
+
+/*	welcome 	*/
+
+.welcome__block{
+	background-image: url(../img/pattern_04.png);
+	background-repeat: repeat;	
+	color: #303334;
+}
+
+
+
+.welcome__rubrick{
+	font-size: 70px;
+	line-height: 110px;
+	text-transform: capitalize;
+	margin-top: 42%;
+	margin-bottom: 6%;
+}
+
+.welcome__rubrick--small{
+	font-size: 26px;
+	line-height: 22px;
+	margin-bottom: 5%;
+}
+
+.welcome__content{
+	font-size: 13px;
+	line-height: 26px;
+	margin-bottom: 5%;
+}
+
+.welcome__content--last{
+	font-size: 13px;
+	line-height: 26px;
+	margin-bottom: 45%;
+}
+
+/*	events 	*/
+
+.events__block{
+	padding-top: 6%;
+}
+
+.events__rubrick{
+	font-size: 70px;
+	line-height: 110px;
+	color: #fff;
+	margin-top: 15%;
+	margin-bottom: 9%;
+	text-transform: capitalize;
+}
+
+.events__scroll{
+	width: 100%;
+	height: 400px;
+	box-sizing: border-box;
+	overflow: auto;
+	color: #fff;
+	margin-bottom: 25%;
+	position: relative;
+}
+
+/* .events__scroll::-webkit-scrollbar{
+	background: #f30;
+	width: 2px;
+}
+
+.events__scroll::-webkit-scrollbar-thumb{
+	color: #000;
+	width: 20px;
+	height: 40px;
+} */
+
+.scroll__date{
+	font-size: 16px;
+	line-height: 26px;
+}
+
+.scroll__rubric{
+	font-size: 26px;
+	line-height: 22px;
+}
+
+.scroll__content{
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 26px;
+	width: 80%;
+}
+
+.scroll__border{
+	margin-top: 15px;
+	margin-bottom: 15px;
+	width: 25%;
+	border: solid 2px #fff;
+}
+
+.scroll__line{
+	display: inline-block;
+	position: absolute;
+	height: 700px;
+	border-right: solid 1px #fff;
+	top: 0;
+	right: 7px;
+	z-index: 2;
+}
+
+/* 	what 	*/
+
+.what__block{
+	color: #fff;
+	padding-top: 10%;
+}
+
+.what__rubrick{
+	margin-top: 8%;
+	margin-bottom: 8%;
+	font-size: 70px;
+	line-height: 110px;
+}
+
+.what__rubrick--small{
+	font-size: 26px;
+	line-height: 22px;
+	margin-bottom: 4%;
+}
+
+.what__content{
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 26px;
+	margin-bottom: 4%;
+}
+
+.what__content--last{
+	margin-bottom: 55%;
+}
+
+
+
+
+/* 	quality 	*/
+
+.quality__block{
+	padding-top: 15%;
+	padding-bottom: 15%;
+	background-image: url(../img/pattern_04.png);
+	background-repeat: repeat;
+	display: none;
+}
+
+.quality__rubric{
+	font-size: 70px;
+	line-height: 110px;
+	color: #303334;
+}
+
+.quality__list{
+	
+}
+
+.quality__item{
+	width: 24%;
+	font-size: 20px;
+	display: inline-block;
+}
+
+.quality__graf{
+
+}
+
+svg{
+	text-align: center;
+}
+
+
+/* testimonials  */
+
+.testim__block{
+	background: #303334;
+	background-image: url(../img/pattern_04.png);
+	background-repeat: repeat;	
+	color: #fff;
+	padding-top: 14%;
+	padding-bottom: 14.5%;
+}
+
+.testim__head{
+	font-size: 70px;
+	line-height: 110px;
+	text-transform: capitalize;
+	margin-bottom: 3%;
+}
+
+.testim__photo{
+	text-align: center;
+	display: inline-block;
+	box-sizing: border-box;
+	max-width: 270px;
+}
+
+.photo__frame{
+	width: 270px;
+	height: 270px;
+	overflow: hidden;
+	border-radius: 50%;
+	margin-bottom: 10%;
+}
+
+.photo__background{
+	position: relative;
+	top: -15%;
+	left: -10%;
+}
+
+.photo__name{
+	font-size: 26px;
+	line-height: 26x;
+}
+
+.photo__position{
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 26px;
+	color: #878a8b;
+}
+
+.testim__text{
+	display: inline-block;
+	box-sizing: border-box;
+	width: 66.666%;
+	vertical-align: top;
+	margin-left: 2.564%;
+	padding-top: 3%;
+}
+
+.testim__rubric{
+	font-size: 26px;
+	line-height: 32x;
+	margin-bottom: 3%;
+}
+
+.testim__content{
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 300;
+	font-size: 13px;
+	line-height: 26px;
+}
+
+
+
+
+/*		map 		*/
+
+.map__item{
+	width: 100%;
+	max-height: 547px;
+}
+
+
+/*		footer 	*/
+
+.about__block{
+	padding-top: 17%;
+	padding-bottom: 6%;
+	background-image: url(../img/pattern_04.png);
+	background-repeat: repeat;
+	color: #303334;
+}
+
+.about__item{
+	display: inline-block;
+	width: 31.623%;
+	box-sizing: border-box;
+	vertical-align: top;
+	margin-bottom: 13%;
+}
+
+.about__rubric{
+	font-size: 70px;
+	line-height: 110px;
+	color: #303334;
+	margin-bottom: 14%;
+}
+
+.about__rubric:first-letter{
+	text-transform: uppercase;
+}
+
+.about__text{
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 300;
+	font-size: 13px;
+	line-height: 20px;
+}
+
+.about__location{
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 300;
+	font-size: 13px;
+	line-height: 20px;
+	margin-bottom: 5%;
+}
+
+.location__line{
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 300;
+	font-size: 13px;
+	line-height: 20px;
+}
+
+.location__phone{
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 300;
+	font-size: 13px;
+	line-height: 20px;
+	color: #303334;
+}
+
+.copyright__text{
+	font-size: 13px;
+	line-height: 20px;
+	color: #303334;
+}
+
+.social__item{
+	display: inline-block;
+	margin-right: 11px;
+}
+
+.sociall__link{
+	color: #fff;
+	border-radius: 50%;
+}
+
+.social__border{
+	width: 44px;
+	height: 44px;
+	background: #e9df4a;
+	border-radius: 50%;
+	text-align: center;
+}
+
+.social__border:hover,
+.social__border--active{
+	background: #303334;
+}
+
+.fa{
+	font-size: 20px;
+	margin-top: 25%;
+}
