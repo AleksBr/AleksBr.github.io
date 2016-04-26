@@ -268,9 +268,11 @@ td{
 }
 
 select{
-	border-bottom: none;
+	border: none;
 	height: 17px;
 	font-size: 11px;
+	box-shadow: inset 1px 1px 1px 0px rgba(150,150,150,0.75);
+	outline: none;
 }
 
 
