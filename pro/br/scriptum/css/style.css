@@ -542,8 +542,7 @@ header{
 	color: #1a2631;
 	font-size: 14px; 
 	font-weight: 400;
-	-webkit-transform: scaleX(1.0013);
-	        transform: scaleX(1.0013);	
+	transform: scaleX(1.0013);	
 	text-transform: lowercase;
 }
 
@@ -584,8 +583,7 @@ header{
 	font-size: 14px; 
 	font-weight: 400;
 	text-align: left;
-	-webkit-transform: scaleX(1.0013);
-	        transform: scaleX(1.0013); 
+	transform: scaleX(1.0013); 
 }
 
 .progress__value-95{
@@ -629,8 +627,7 @@ header{
 	font-size: 14px; 
 	font-weight: 400;
 	text-align: left;
-	-webkit-transform: scaleX(1.0013);
-	        transform: scaleX(1.0013); 
+	transform: scaleX(1.0013); 
 }
 
 /***		show 	***/
@@ -668,8 +665,7 @@ header{
 	color: #1a2631;
 	font-size: 14px; 
 	font-weight: 400;
-	-webkit-transform: scaleX(1.0013);
-	        transform: scaleX(1.0013); 
+	transform: scaleX(1.0013); 
 }
 
 .show__content{
@@ -772,8 +768,7 @@ header{
 	font-size: 14px;
 	font-weight: 400;
 	text-align: left;
-	-webkit-transform: scaleX(1.0013);
-	        transform: scaleX(1.0013);
+	transform: scaleX(1.0013);
 	margin-bottom: 7px;
 	letter-spacing: 1.7px;
 }
@@ -866,8 +861,7 @@ header{
 	letter-spacing: 2.94px;
 	line-height: 35.002px;
 	text-align: center;
-	-webkit-transform: scaleX(1.0013);
-	        transform: scaleX(1.0013); 
+	transform: scaleX(1.0013); 
 	display: inline-block;
 	vertical-align: middle;
 	width: 65%;
@@ -997,12 +991,17 @@ header{
 }
 
 .footer__btn{
+
 	width: 50px;
 	height: 50px;
 	display: inline-block;
 	background: #1a2631;
-	float: right;
-	top: 10%;
+	/* float: right; */
+	/* top: 10%; */
+	position: fixed;
+	bottom: 40px;
+	right: 40px;
+	opacity: 0.3
 }
 
 .f-btn__link{
@@ -1015,7 +1014,7 @@ header{
 }
 
 .footer__btn:hover{
-	opacity: 0.4;
+	opacity: 1;
 }
 
 .footer__text{
@@ -1071,11 +1070,6 @@ header{
 /***	1270 	***/
 
 @media screen and (max-width: 1270px){
-
-	.logo-block__rubric{
-		font-size: 90px;
-	}
-
 
 	.container--big{
 		max-width: 1200px;
@@ -1151,10 +1145,6 @@ header{
 /***	970 	***/
 
 @media screen and (max-width: 970px){
-
-	.logo-block__rubric{
-		font-size: 50px;
-	}
 
 	.container--big{
 		display: block;

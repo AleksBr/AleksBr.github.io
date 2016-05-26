@@ -7,12 +7,37 @@
 	<title>SCRIPTUM</title>
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
 	<link rel="stylesheet" href="css/Normalize.css">
 	<link rel="stylesheet" href="css/style.css">
+
 	<!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
+
+	<script>
+		$(document).ready(function(){
+			$(".f-btn__link").click(function () {
+			var elementClick = $(this).attr("href")
+			var destination = $(elementClick).offset().top;
+			jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 1500);
+			return false;
+			});	
+
+			$('#scroll__button').removeClass('footer__btn');
+			$(window).scroll(function(){
+				if ($(this).scrollTop() > 400) {
+					$('#scroll__button').addClass('footer__btn').fadeIn('fast');
+				} else {
+					$('#scroll__button').removeClass('footer__btn').fadeIn('fast');
+				}
+			});
+//scroll__button
+		});
+	</script>
 </head>
 <body>
 <div class="container--big">
@@ -265,7 +290,7 @@
 				</ul>			
 				<p class="footer__text">Designed by Andrejs Hairulins - 2016©</p>
 			</div>
-			<div class="footer__btn">
+			<div id="scroll__button" class="footer__btn">
 				<a class="f-btn__link" href="#contact-id"></a>
 			</div>
 		</div>
