@@ -1,100 +1,23 @@
 @import 'https://fonts.googleapis.com/css?family=Lato';
 @import 'https://fonts.googleapis.com/css?family=Prompt:400,700';
+h1,h2,h3,h4,h5,h6{font-size:0;}
+body{background:#3977ad;font-family:'Prompt',sans-serif;}
 
-body{
-	background: #3977ad;
-	font-family: 'Prompt', sans-serif;
-}
+main{padding-bottom:20px;}
 
-main{
-	padding-bottom: 20px;
-}
+ul{list-style: none;margin:0;}
 
-a{
-	color: #6cbd7d;
-	font-size: 18px;
-	outline: none;
-}
+a{color:#6cbd7d;font-size:27px;outline:none;padding:5px 0;}
 
-@media screen and (min-width: 40em) {
-	a{
-		font-size: 22px;
-	}
-}
+.aa-main-address{font-size:20px;}
 
-a:hover{
-	color: #1f2531;
-}
+a:hover{color:#1f2531;}
 
-a:visited{
-	color: #CD5C5C;
-}
+a:visited{color:#CD5C5C;}
 
-a:visited:hover{
-	color: #1f2531;
-}
+a:visited:hover{color:#1f2531;}
 
-nav{
-	margin-bottom: 20px;
-}
-
-h2{
-	font-family: 'Lato', sans-serif;
-	margin: 0;
-	color: #FFDEAD;
-	font-size: 50px;
-}
-
-.aa-contact{
-	background-color: #6cbd7d;
-	box-sizing: border-box;
-	padding: 20px 10px;
-	box-shadow: 2px 4px 30px rgba(0,0,0, 0.7);
-}
-
-.aa-contact a{
-	color: #FFDEAD;
-}
-
-.aa-contact a:hover{
-	color: #3977ad;
-}
-
-@media screen and (max-width: 39.9375em) {
-	h2{
-		font-size: 30px;
-	}
-
-	.aa-contact{
-		text-align: center;
-	}
-
-	.aa-contact li{
-		text-align: left;
-	}
-}
-
-
-h3{
-	color: #1f2531;
-	font-size: 35px;
-	border-bottom: solid 3px #1f2531;
-	display: inline-block;
-	margin-bottom: 20px;
-}
-h4{
-	color: #1f2531;
-	border-bottom: solid 2px #1f2531;
-	display: inline-block;
-	font-size: 22px;
-}
-
-ul{
-	list-style: none;
-	margin: 0;
-}
-
-
+nav{margin-bottom:20px;}
 
 .header__up{
 	background-color: #6cbd7d;
@@ -104,4 +27,47 @@ ul{
 
 .header__down{
 	padding-bottom: 20px;
+}
+
+.head__title{
+	font-family: 'Lato', sans-serif;
+	margin: 0;
+	color: #FFDEAD;
+	font-size: 30px;
+}
+
+.main__title{
+	color: #1f2531;
+	font-size: 35px;
+	border-bottom: solid 3px #1f2531;
+	display: inline-block;
+	margin-bottom: 20px;
+}
+
+h4{
+	color: #1f2531;
+	border-bottom: solid 2px #1f2531;
+	display: inline-block;
+	font-size: 22px;
+}
+
+.aa-contact{
+	background-color: #6cbd7d;
+	box-sizing: border-box;
+	padding: 20px 10px;
+	box-shadow: 2px 4px 30px rgba(0,0,0, 0.7);
+}
+
+.aa-contact a{color:#FFDEAD;}
+.aa-contact a:hover{color:#3977ad;}
+
+/* media */
+@media screen and (min-width: 40em) {
+	.head__title{font-size:50px;}
+	a{font-size:22px;}
+}
+@media screen and (max-width: 39.9375em) {
+	.main__title{font-size:30px;}
+	.aa-contact{text-align:center;}
+	.aa-contact li{text-align:left;}
 }
