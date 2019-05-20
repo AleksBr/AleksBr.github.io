@@ -1,7 +1,5 @@
-@import 'https://fonts.googleapis.com/css?family=Lato';
-@import 'https://fonts.googleapis.com/css?family=Prompt:400,700';
 h1,h2,h3,h4,h5,h6{font-size:0;}
-body{background:#3977ad;font-family:'Prompt',sans-serif;}
+body{background:#3977ad;}
 
 main{padding-bottom:20px;}
 
