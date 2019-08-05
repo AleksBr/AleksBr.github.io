@@ -1,93 +1,100 @@
-h1,h2,h3,h4,h5,h6{font-size:0;}
-body{background:#3977ad;}
-
-main{padding-bottom:20px;}
-
-ul{list-style: none;margin:0;}
-
-a{color:#6cbd7d;font-size:27px;outline:none;padding:5px 0;}
-
-.aa-main-address{font-size:20px;}
-
-a:hover{color:#1f2531;}
-
-a:visited{color:#CD5C5C;}
-
-a:visited:hover{color:#1f2531;}
-
-nav{margin-bottom:20px;}
-
-.header__up{
-	background-color: #6cbd7d;
-	box-shadow: 0 4px 20px rgba(0,0,0, 0.7);
-	padding-top: 20px;
+html{
+	height: 100%;
 }
 
-.header__down{
-	padding-bottom: 20px;
+body{
+	min-height: 100%;
+	background-color: coral;
 }
 
-.head__title{
-	font-family: 'Lato', sans-serif;
+h1,h2,h3,h4,h5{
 	margin: 0;
-	color: #FFDEAD;
-	font-size: 30px;
 }
-
-.main__title{
-	color: #1f2531;
-	font-size: 35px;
-	border-bottom: solid 3px #1f2531;
-	display: inline-block;
-	margin-bottom: 20px;
-}
-
-h4{
-	color: #1f2531;
-	border-bottom: solid 2px #1f2531;
-	display: inline-block;
-	font-size: 22px;
-}
-
-.aa-contact{
-	background-color: #6cbd7d;
-	box-sizing: border-box;
-	padding: 20px 10px;
-	box-shadow: 2px 4px 30px rgba(0,0,0, 0.7);
-}
-
-.aa-contact a{color:#FFDEAD;}
-.aa-contact a:hover{color:#3977ad;}
-
-/* media */
-@media screen and (min-width: 40em) {
-	.head__title{font-size:50px;}
-	a{font-size:22px;}
-}
-@media screen and (max-width: 39.9375em) {
-	.main__title{font-size:30px;}
-	.aa-contact{text-align:center;}
-	.aa-contact li{text-align:left;}
-}
-
 
 .grad-wrap{
-	position: relative;
+	position: absolute;
+	width: 100%;
+	height: 100%;
 }
 
-.grad-01, .grad-02{
+.grad-01, .grad-02, .grad-03, .grad-04, .grad-05{
 	position: absolute;
 	left: 0;
 	right: 0;
 	top: 0;
 	bottom: 0;
+	width: 100%;
+	height: 100%;
 }
 
 .grad-01{
-	background: rgba(252,234,187,1);
-	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(252,234,187,1)), color-stop(50%, rgba(252,205,77,0.69)), color-stop(51%, rgba(248,181,0,0.68)), color-stop(100%, rgba(251,223,147,0.37)));
-	background: -webkit-gradient(linear, left top, right top, from(rgba(252,234,187,1)), color-stop(50%, rgba(252,205,77,0.69)), color-stop(51%, rgba(248,181,0,0.68)), to(rgba(251,223,147,0.37)));
-	background: linear-gradient(to right, rgba(252,234,187,1) 0%, rgba(252,205,77,0.69) 50%, rgba(248,181,0,0.68) 51%, rgba(251,223,147,0.37) 100%);
-	-webkit-filter: progid:DXImageT;
-	        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', endColorstr='#fbdf93', GradientType=1 );
+	background: radial-gradient(circle, black 0.2em, rgba(255, 255, 255, 0) 0.2em) 0 0,
+				radial-gradient(circle, black 0.2em, rgba(255, 255, 255, 0) 0.2em) 0.5em 0.5em;
+	background-size: 1em 1em; 
+	background-color: rgba(255, 255, 255, 0);
+	background-repeat: repeat;
+	z-index: 200;
+}
+
+.grad-02{
+	background: radial-gradient(circle, white 0.6em, rgba(255, 255, 255, 0) 0.6em) 0 0,
+				radial-gradient(circle, white 0.6em, rgba(255, 255, 255, 0) 0.6em) 1em 1em;
+	background-size: 3em 3em;
+	background-color: rgba(255, 255, 255, 0);
+	background-repeat: repeat;
+	z-index: 300;
+}
+
+
+.grad-03{
+	background: radial-gradient(circle, darkgoldenrod 1em, rgba(255, 255, 255, 0) 1em) 0 0,
+				radial-gradient(circle, darkgoldenrod 1em, rgba(255, 255, 255, 0) 1em) 1.5em 1.5em;
+	background-size: 5em 5em; 
+	background-color: rgba(255, 255, 255, 0);
+	background-repeat: repeat;
+	z-index: 100;
+}
+
+.grad-04{
+	background: radial-gradient(circle, lightgreen 1.4em, rgba(255, 255, 255, 0) 1.4em) 0 0,
+				radial-gradient(circle, lightgreen 1.4em, rgba(255, 255, 255, 0) 1.4em) 2em 2em;
+	background-size: 7em 7em; 
+	background-color: rgba(255, 255, 255, 0);
+	background-repeat: repeat;
+	z-index: 400;
+}
+
+.grad-05{
+	background: radial-gradient(circle, darkkhaki 1.8em, rgba(255, 255, 255, 0) 1.8em) 0 0,
+				radial-gradient(circle, darkkhaki 1.8em, rgba(255, 255, 255, 0) 1.8em) 2.5em 2.5em;
+	background-size: 9em 9em; 
+	background-color: rgba(255, 255, 255, 0);
+	background-repeat: repeat;
+	z-index: 500;
+}
+
+.grad-wrap .grad-text{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+	z-index: 450;
+}
+
+.grad-text h3{
+	position: relative;
+	z-index: 150;
+}
+.grad-text h2{
+	position: relative;
+	z-index: 650;
+}
+
+
+
+
+/* media */
+@media screen and (min-width: 40em) {
+	
 }
