@@ -2,6 +2,7 @@
 	var movementStrength = 25;
 	var height = movementStrength / $(window).height();
 	var width = movementStrength / $(window).width();
+
 	$("body").mousemove(function(e){
 
 		var pageX = e.pageX - ($(window).width() / 2);
