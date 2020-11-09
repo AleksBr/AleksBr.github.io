@@ -1,66 +1,242 @@
 {
-  "commands": [
-    {"name": "man", "description": "", "example": ""},
-    {"name": "ls", "description": "", "example": ""},
-    {"name": "cd", "description": "", "example": ""},
-    {"name": "pwd", "description": "", "example": ""},
-    {"name": "mkdir", "description": "", "example": ""},
-    {"name": "rmdir", "description": "", "example": ""},
-    {"name": "mv", "description": "", "example": ""},
-    {"name": "cp", "description": "", "example": ""},
-    {"name": "open", "description": "", "example": ""},
-    {"name": "touch", "description": "", "example": ""},
-    {"name": "find", "description": "", "example": ""},
-    {"name": "ln", "description": "", "example": ""},
-    {"name": "gzip", "description": "", "example": ""},
-    {"name": "gunzip", "description": "", "example": ""},
-    {"name": "tar", "description": "", "example": ""},
-    {"name": "alias", "description": "", "example": ""},
-    {"name": "cat", "description": "", "example": ""},
-    {"name": "less", "description": "", "example": ""},
-    {"name": "tail", "description": "", "example": ""},
-    {"name": "wc", "description": "", "example": ""},
-    {"name": "grep", "description": "", "example": ""},
-    {"name": "sort", "description": "", "example": ""},
-    {"name": "uniq", "description": "", "example": ""},
-    {"name": "diff", "description": "", "example": ""},
-    {"name": "echo", "description": "", "example": ""},
-    {"name": "chown", "description": "", "example": ""},
-    {"name": "chmod", "description": "", "example": ""},
-    {"name": "umask", "description": "", "example": ""},
-    {"name": "du", "description": "", "example": ""},
-    {"name": "df", "description": "", "example": ""},
-    {"name": "basename", "description": "", "example": ""},
-    {"name": "dirname", "description": "", "example": ""},
-    {"name": "ps", "description": "", "example": ""},
-    {"name": "top", "description": "", "example": ""},
-    {"name": "kill", "description": "", "example": ""},
-    {"name": "killall", "description": "", "example": ""},
-    {"name": "jobs", "description": "", "example": ""},
-    {"name": "bg", "description": "", "example": ""},
-    {"name": "fg", "description": "", "example": ""},
-    {"name": "type", "description": "", "example": ""},
-    {"name": "which", "description": "", "example": ""},
-    {"name": "nohup", "description": "", "example": ""},
-    {"name": "xargs", "description": "", "example": ""},
-    {"name": "vim", "description": "", "example": ""},
-    {"name": "emacs", "description": "", "example": ""},
-    {"name": "nano", "description": "", "example": ""},
-    {"name": "whoami", "description": "", "example": ""},
-    {"name": "who", "description": "", "example": ""},
-    {"name": "su", "description": "", "example": ""},
-    {"name": "sudo", "description": "", "example": ""},
-    {"name": "passwd", "description": "", "example": ""},
-    {"name": "ping", "description": "", "example": ""},
-    {"name": "traceroute", "description": "", "example": ""},
-    {"name": "clear", "description": "", "example": ""},
-    {"name": "history", "description": "", "example": ""},
-    {"name": "export", "description": "", "example": ""},
-    {"name": "crontab", "description": "", "example": ""},
-    {"name": "uname", "description": "", "example": ""},
-    {"name": "env", "description": "", "example": ""},
-    {"name": "printenv", "description": "", "example": ""},
-    {"name": "", "description": "", "example": ""},
-    {"name": "", "description": "", "example": ""}
-  ]
+  "man": {
+    "description": "предназначенная для форматирования и вывода справочных страниц",
+    "example": ["man <command_name>", "man passwd #раздел 1"]
+  },
+  "ls": {
+    "description": "печатает в стандартный вывод содержимое каталогов",
+    "example": ["ls -1", "ls -al"]
+  },
+  "cd": {
+    "description": "изменение текущего рабочего каталога",
+    "example": ["cd ~", "cd /path"]
+  },
+  "pwd": {
+    "description": "",
+    "example": ""
+  },
+  "mkdir": {
+    "description": "",
+    "example": ""
+  },
+  "rmdir": {
+    "description": "",
+    "example": ""
+  },
+  "mv": {
+    "description": "",
+    "example": ""
+  },
+  "cp": {
+    "description": "",
+    "example": ""
+  },
+  "open": {
+    "description": "",
+    "example": ""
+  },
+  "touch": {
+    "description": "",
+    "example": ""
+  },
+  "find": {
+    "description": "",
+    "example": ""
+  },
+  "ln": {
+    "description": "",
+    "example": ""
+  },
+  "gzip": {
+    "description": "",
+    "example": ""
+  },
+  "gunzip": {
+    "description": "",
+    "example": ""
+  },
+  "tar": {
+    "description": "",
+    "example": ""
+  },
+  "alias": {
+    "description": "",
+    "example": ""
+  },
+  "cat": {
+    "description": "",
+    "example": ""
+  },
+  "less": {
+    "description": "",
+    "example": ""
+  },
+  "tail": {
+    "description": "",
+    "example": ""
+  },
+  "wc": {
+    "description": "",
+    "example": ""
+  },
+  "grep": {
+    "description": "",
+    "example": ""
+  },
+  "sort": {
+    "description": "",
+    "example": ""
+  },
+  "uniq": {
+    "description": "",
+    "example": ""
+  },
+  "diff": {
+    "description": "",
+    "example": ""
+  },
+  "echo": {
+    "description": "",
+    "example": ""
+  },
+  "chown": {
+    "description": "",
+    "example": ""
+  },
+  "chmod": {
+    "description": "",
+    "example": ""
+  },
+  "umask": {
+    "description": "",
+    "example": ""
+  },
+  "du": {
+    "description": "",
+    "example": ""
+  },
+  "df": {
+    "description": "",
+    "example": ""
+  },
+  "basename": {
+    "description": "",
+    "example": ""
+  },
+  "dirname": {
+    "description": "",
+    "example": ""
+  },
+  "ps": {
+    "description": "",
+    "example": ""
+  },
+  "top": {
+    "description": "",
+    "example": ""
+  },
+  "kill": {
+    "description": "",
+    "example": ""
+  },
+  "killall": {
+    "description": "",
+    "example": ""
+  },
+  "jobs": {
+    "description": "",
+    "example": ""
+  },
+  "bg": {
+    "description": "",
+    "example": ""
+  },
+  "fg": {
+    "description": "",
+    "example": ""
+  },
+  "type": {
+    "description": "",
+    "example": ""
+  },
+  "which": {
+    "description": "",
+    "example": ""
+  },
+  "nohup": {
+    "description": "",
+    "example": ""
+  },
+  "xargs": {
+    "description": "",
+    "example": ""
+  },
+  "vim": {
+    "description": "",
+    "example": ""
+  },
+  "emacs": {
+    "description": "",
+    "example": ""
+  },
+  "nano": {
+    "description": "",
+    "example": ""
+  },
+  "whoami": {
+    "description": "",
+    "example": ""
+  },
+  "who": {
+    "description": "",
+    "example": ""
+  },
+  "su": {
+    "description": "",
+    "example": ""
+  },
+  "sudo": {
+    "description": "",
+    "example": ""
+  },
+  "passwd": {
+    "description": "",
+    "example": ""
+  },
+  "ping": {
+    "description": "",
+    "example": ""
+  },
+  "traceroute": {
+    "description": "",
+    "example": ""
+  },
+  "clear": {
+    "description": "",
+    "example": ""
+  },
+  "history": {
+    "description": "",
+    "example": ""
+  },
+  "export": {
+    "description": "",
+    "example": ""
+  },
+  "crontab": {
+    "description": "",
+    "example": ""
+  },
+  "uname": {
+    "description": "",
+    "example": ""
+  },
+  "env": {
+    "description": "",
+    "example": ""
+  },
+  "printenv": {
+    "description": "",
+    "example": ""
+  }
 }
